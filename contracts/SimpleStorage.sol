@@ -2,9 +2,11 @@
 pragma solidity ^0.8.8;
 
 contract SimpleStorage {
-    bool hasFavouriteNumber = true;
-    uint favoriteNumber = 5;
-    string 
+    uint256 public favoriteNumber;
+
+    function store (uint256 _favoriteNumber) public {
+        favoriteNumber = _favoriteNumber;
+    }
 
 
 }
